@@ -1,4 +1,4 @@
-name: 'Lint a PR\'s title'
+name: 'Lint a PR title'
 description: 'Ensure title of the PR is in BOARD-TICKET_NUMBER {Description} format.'
 inputs:
   pr:
