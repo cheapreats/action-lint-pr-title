@@ -1,0 +1,12 @@
+name: 'Lint a PR\'s title'
+description: 'Ensure title of the PR is in BOARD-TICKET_NUMBER {Description} format.'
+inputs:
+  pr:
+    description: 'PR JSON string obtained from @cheapreats/action-get-pr-configuration.'
+    required: true
+  allowed-boards:
+    description: 'A list of allowed board names, separated by comma.'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
